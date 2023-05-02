@@ -87,9 +87,9 @@
 /* TESTIMONIALS */
 .col-25{
     min-width: calc(100%/4 - 20px);
-    margin:10px;
+    margin: 10px;
     height: 200px;
-    background-color: rgb(188, 152, 223);
+    background-color: rgb(84, 40, 126);
 }
 
 /* FINE TESTIMONIALS */
@@ -113,6 +113,14 @@
         flex-direction: row;
     }
     /* FINE DEMO APPLICATION */
+
+    /* TESTIMONIALS */
+    .benefit .row{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* FINe TESTIMONIALS */
     
 
 
@@ -141,6 +149,14 @@
         flex-direction: row;
     }
     /* FINE PLANNING */
+
+    /* BENEFITs*/
+    .benefit .row-wrap{
+        width: 100%;
+        display: flex;
+        
+    }
+    /* FINE BENEFITs */
    
 }
 
