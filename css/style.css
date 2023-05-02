@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/* UTILITa */
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* FINE UTILITA */
+
+
 
 /* HEADER */
 .background-header{
@@ -15,7 +29,7 @@
 }
 
 /* CONTENUTI HEADER */
-.left-logo, .right-menu{
+.col-left-logo, .col-right-menu{
     height: 100px;
     width: 100px;
     background-color: rgb(223, 91, 91);
@@ -33,15 +47,33 @@
 .hamburger{
     background-color: rgb(0, 255, 191);
 }
+
 /* FINE CONTENUTI HEADER */
 /* FINE HEADER */
 
 
-/* LAYOUT MOBILE */
-.container{
-    max-width: 600px;
-    margin: 0 auto;
+
+/* MAIN */
+/* DEMO APPLICATION */
+.col-30{
+    width: calc(100% / 3 * 2 -20px);
+    margin: 10px;
+    height: 400px;
+    background-color: rgb(0, 217, 255);
+
 }
+
+.col-16{
+    width: calc(100% / 3 -20px);
+    margin: 10px;
+    height: 200px;
+    background-color: rgb(99, 237, 255);
+
+}
+
+
+/* FINE DEMO APPLICATION */
+/* FINE MAIN */
 
 
 
@@ -60,6 +92,18 @@
 @media screen and (min-width:991px) {
     .container{
         max-width: 950px;
+    }
+
+    .col-right-menu{
+        width: 500px;
+    }
+    .hamburger{
+        display: none;
+    }
+
+
+    .extended-menu{
+        display: block;
     }
 }
 
