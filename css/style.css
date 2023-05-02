@@ -94,6 +94,12 @@
 
 /* FINE TESTIMONIALS */
 
+/* BENEFITS */
+.benefit{
+    background-color: rgb(189, 146, 230);
+}
+/* FINE BENEFITS */
+
 
 /* FINE MAIN */
 
@@ -121,7 +127,13 @@
         justify-content: center;
     }
     /* FINe TESTIMONIALS */
-    
+
+    /* BENEFITS */
+
+    .col-16{
+        min-width: calc(100%/2 - 20px);
+    }
+    /* FINE BENEFITS */
 
 
 }
@@ -151,11 +163,10 @@
     /* FINE PLANNING */
 
     /* BENEFITs*/
-    .benefit .row-wrap{
-        width: 100%;
-        display: flex;
-        
+    .col-16{
+        min-width: calc(100%/3 - 20px);
     }
+
     /* FINE BENEFITs */
    
 }
