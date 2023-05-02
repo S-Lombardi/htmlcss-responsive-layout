@@ -99,6 +99,7 @@
 }
 /* FINE BENEFITS */
 
+/* ABOUT US */
 .col-60{
     min-width: calc(60% - 20px);
     margin: 10px;
@@ -112,13 +113,39 @@
     height: 400px;
     background-color:rgb(255, 197, 127);
 }
-
-
-/* ABOUT US */
 /* FINe ABOUT US */
 
+/* GET STARTED */
+.get-start{
+    background-color: rgb(211, 182, 238);
+}
 
+.col-100{
+    min-width: calc(100% - 20px);
+    margin: 10px;
+    height: 400px;
+    background-color:rgb(204, 127, 255);
+}
+
+.get-start .container{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+/* FINE GET STARTED */
 /* FINE MAIN */
+
+/* FOOTER */
+
+.background-footer{
+    background-color: rgb(99, 99, 99);
+}
+
+.background-footer .container{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* FINE FOOTER */
 
 
 
@@ -155,13 +182,7 @@
     .about-us .row{
         flex-direction: row;
     }
-
-
     /* ABOUT US */
-
-
-
-
 
 }
 
