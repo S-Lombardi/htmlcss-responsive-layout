@@ -94,21 +94,66 @@ ul{
 
 
 /* MAIN */
-/* DEMO APPLICATION */
+/*** DEMO APPLICATION ***/
 .col-30{
     min-width: calc(100%/3 *2 - 20px);
     margin: 10px;
-    height: 400px;
-    background-color: rgb(0, 217, 255);
+    border: 2px dashed black;
 }
 
 .col-16{
     min-width: calc(100%/3 - 20px);
     margin: 10px;
-    height: 200px;
-    background-color: rgb(99, 237, 255);
+    min-height: 200px;
+    border: 2px dashed black;
 }
-/* FINE DEMO APPLICATION */
+
+/* Contenuti col-30 */
+.application .content{
+    padding: 40px;
+    padding-bottom: 0px;
+    background-color: #b5ddff;
+    border-radius: 30px;
+}
+/* Titolo */
+.application .content h2{
+    color:#0084fd;
+}
+/* Testo */
+.application .content p{
+    line-height: 30px;
+    color:#5a6e7f;
+    font-weight: 700;
+    margin: 30px 0px 30px 0px;
+}
+/* Pulsante  */
+.application .content button{
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: #0084fd;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.application .content i{
+    color: white;
+}
+
+/* IMG phone */
+.application .content .col-img{
+    
+}
+.application .content img{
+    display: inline;
+    width: 100%;
+}
+
+
+/*** FINE DEMO APPLICATION ***/
+
 
 /* PLANNING */
 .background-planning{
@@ -242,6 +287,12 @@ ul{
     }
     /* FINE HEADER */
 
+    /* DEMO APPLICATION */
+    .application .content img{
+        float: right;
+    }
+    /* FINE DEMO APPLICATION */
+
     /* PLANNING */
     .background-planning .row{
         flex-direction: row;
@@ -252,7 +303,6 @@ ul{
     .col-16{
         min-width: calc(100%/3 - 20px);
     }
-
     /* FINE BENEFITs */
 
 }
