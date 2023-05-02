@@ -96,17 +96,14 @@
         max-width: 750px;
     }
 
-    /* PLANNING */
-    .row{
+    /* DEMO APPLICATION */
+    .application .row{
         flex-wrap: wrap;
         flex-direction: row;
     }
+    /* FINE DEMO APPLICATION */
+    
 
-    .background-planning .row{
-        flex-wrap:nowrap;
-        flex-direction: column;
-    }
-    /* FINE PLANNING */
 
 }
 
@@ -128,6 +125,11 @@
     }
     /* FINE HEADER */
    
+    /* PLANNING */
+    .background-planning .row{
+        flex-direction: row;
+    }
+    /* FINE PLANNING */
    
 }
 
