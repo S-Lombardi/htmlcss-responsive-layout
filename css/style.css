@@ -144,10 +144,10 @@ ul{
 
 /* IMG phone */
 .application .content .col-img{
-    
+    min-width: 50%;
 }
+
 .application .content img{
-    display: inline;
     width: 100%;
 }
 
@@ -242,9 +242,23 @@ ul{
 
     /* DEMO APPLICATION */
     .application .row{
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
+
+    .application .content{
+        display: flex;
+    }
+    .application .content .left-content{
+        width: 50%;
+    }
+
+    .application .content .right-content{
+        width: 50%;
+    }
+
+
     /* FINE DEMO APPLICATION */
 
     /* TESTIMONIALS */
@@ -288,9 +302,7 @@ ul{
     /* FINE HEADER */
 
     /* DEMO APPLICATION */
-    .application .content img{
-        float: right;
-    }
+   
     /* FINE DEMO APPLICATION */
 
     /* PLANNING */
