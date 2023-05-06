@@ -15,13 +15,17 @@ body,input {
 }
 
 .container{
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     margin-bottom: 60px;
 }
 
 ul{
     list-style-type: none;
+}
+
+.text-center{
+    text-align: center;
 }
 /* FINE UTILITA */
 
@@ -64,7 +68,6 @@ ul{
 /* Fine Logo - Hamburger Menu */
 
 /* Menu esteso */
-
 .extended-menu{
     height: 100%;
     display: none;
@@ -104,30 +107,28 @@ ul{
 .col-16{
     min-width: calc(100%/3 - 20px);
     margin: 10px;
-    min-height: 200px;
     border: 2px dashed black;
 }
 
-/* Contenuti col-30 */
-.application .content{
+.demo-application, .application-16{
     padding: 40px;
     padding-bottom: 0px;
     background-color: #b5ddff;
     border-radius: 30px;
 }
 /* Titolo */
-.application .content h2{
+.left-content h2,.application-16 h2{
     color:#0084fd;
 }
 /* Testo */
-.application .content p{
+.left-content p, .application-16 p{
     line-height: 30px;
     color:#5a6e7f;
     font-weight: 700;
     margin: 30px 0px 30px 0px;
 }
 /* Pulsante  */
-.application .content button{
+.demo-application button{
     font-weight: 700;
     font-size: 15px;
     color: white;
@@ -138,34 +139,95 @@ ul{
     margin-bottom: 30px;
 }
 
-.application .content i{
+.demo-application i{
     color: white;
 }
 
 /* IMG phone */
-.application .content .col-img{
-    min-width: 50%;
-}
 
-.application .content img{
+
+.demo-application img{
+    width: 260px;
+}
+/* Application 16  */
+.application-16{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.application-16 i{
+    font-size: 100px;
+    color: #0084fd;
+    margin-bottom: 20px;
+}
 
 /*** FINE DEMO APPLICATION ***/
 
 
 /* PLANNING */
 .background-planning{
-    background-color: rgb(179, 124, 230);
+    background-color: rgb(155, 143, 242);
+    padding-top: 30px;
 }
 
 .col-50{
     min-width: calc(50% - 20px);
     margin: 10px;
-    height: 500px;
-    background-color: rgb(84, 40, 126);
+    min-height: 500px;
+    border: 1px dashed black;
 }
+
+.planning-left img, .planning-right img{
+    width: 100%;
+}
+
+.planning-right{
+    padding: 30px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.planning-left h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.planning-left p{
+    font-size: 15px;
+    color: white;
+    line-height: 30px;
+}
+
+.planning-right h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.planning-right p{
+    font-size: 17px;
+    line-height: 35px
+}
+
+.planning-right button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    font-size: 30px;
+    background-color: rgb(155, 143, 242);
+    border: none;
+    padding: 13px 20px 13px 20px;
+    border-radius: 50%;
+
+}
+
+
+
+
 /* FINE PLANNING */
 
 /* TESTIMONIALS */
@@ -227,7 +289,6 @@ ul{
     margin-bottom: 0px;
     margin-top: 0px;
 }
-
 /* FINE FOOTER */
 
 
@@ -240,26 +301,28 @@ ul{
         max-width: 750px;
     }
 
-    /* DEMO APPLICATION */
+    /* Demo Application */
     .application .row{
-        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
+    .col-30{
+       width: calc(100%/3);
+    }
+    .col-30 .left-content{
+        width: 50%;
+    }
+    .col-30 .right-content{
+        width: 50%;
+    }
 
-    .application .content{
+    .col-16{
+        width: calc(100%/3);
+    }
+    .demo-application{
         display: flex;
+        flex-direction: column;
     }
-    .application .content .left-content{
-        width: 50%;
-    }
-
-    .application .content .right-content{
-        width: 50%;
-    }
-
-
-    /* FINE DEMO APPLICATION */
 
     /* TESTIMONIALS */
     .benefit .row{
@@ -301,20 +364,17 @@ ul{
     }
     /* FINE HEADER */
 
-    /* DEMO APPLICATION */
-   
-    /* FINE DEMO APPLICATION */
-
-    /* PLANNING */
+    /* Plannng */
     .background-planning .row{
         flex-direction: row;
     }
-    /* FINE PLANNING */
+    
+    .background-planning .col-50{
+        max-width: 50%;
+    }
 
     /* BENEFITs*/
-    .col-16{
-        min-width: calc(100%/3 - 20px);
-    }
+  
     /* FINE BENEFITs */
 
 }
