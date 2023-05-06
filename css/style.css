@@ -170,7 +170,9 @@ ul{
 /* PLANNING */
 .background-planning{
     background-color: rgb(155, 143, 242);
-    padding-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
 }
 
 .col-50{
@@ -323,14 +325,18 @@ ul{
         display: flex;
         flex-direction: column;
     }
+    /* Planning */
 
+    .planning-left h1{
+        font-size: 60px;
+    }
     /* TESTIMONIALS */
     .benefit .row{
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
     }
-    /* FINe TESTIMONIALS */
+    
 
     /* BENEFITS */
     .col-16{
@@ -350,7 +356,7 @@ ul{
 /* DESKTOP */
 @media screen and (min-width:991px) {
     .container{
-        max-width: 950px;
+        max-width: 940px;
     }
     /* HEADER */
     .col-right-menu{
@@ -369,9 +375,31 @@ ul{
         flex-direction: row;
     }
     
-    .background-planning .col-50{
-        max-width: 50%;
+    .planning-right img{
+        width: 60%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
+
+    .planning-left img{
+        width: 75%;
+        position: relative;
+        bottom: 60px;
+    }
+
+    .col-50{
+        position:relative;
+    }
+    .planning-right{
+        position: absolute;
+        bottom:0;
+    }
+
+    .planning-left h1{
+        font-size: 30px;
+    }
+    
 
     /* BENEFITs*/
   
