@@ -224,20 +224,74 @@ ul{
     border: none;
     padding: 13px 20px 13px 20px;
     border-radius: 50%;
-
 }
-
-
-
-
 /* FINE PLANNING */
 
 /* TESTIMONIALS */
 .col-25{
     min-width: calc(100%/4 - 20px);
     margin: 10px;
+    min-height: 200px;
+    border:1px dashed black;
+}
+.testimonial-partners h1{
+    font-size: 40px;
+    color: rgb(155, 143, 242);
+}
+.testimonial-partners p{
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial{
+    background-color:rgb(155, 143, 242);
+    border-radius: 40px;
+    padding: 50px 30px 50px 30px;
+}
+.testimonial img{
+    width: 300px;
+}
+
+.photo-cropper{
+    width: 200px;
     height: 200px;
-    background-color: rgb(84, 40, 126);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.testimonial img{
+    display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.testimonial, .testimonial-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.testimonial-text p{
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    line-height: 25px;
+}
+.testimonial-text span{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+.testimonial-text i{
+    font-size: 30px;
+    padding: 10px;
 }
 /* FINE TESTIMONIALS */
 
@@ -330,7 +384,24 @@ ul{
     .planning-left h1{
         font-size: 60px;
     }
-    /* TESTIMONIALS */
+    /* Testimonial */
+    .testimonial{
+        flex-direction: row;
+    }
+    .testimonial-text{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 60px;
+    }
+
+    .photo-cropper{
+        width: 320px;
+    }
+
+    .testimonial-text p{
+        text-align: left;
+    }
+
     .benefit .row{
         flex-wrap: wrap;
         flex-direction: row;
@@ -399,7 +470,10 @@ ul{
     .planning-left h1{
         font-size: 30px;
     }
-    
+    /* Testimonials */
+    .testimonial img{
+        margin-left: -20%;
+    }
 
     /* BENEFITs*/
   
@@ -413,5 +487,9 @@ ul{
     .container{
         max-width: 1140px;
     }
+    /* Testimonials */
+    .photo-cropper {
+        width: 282px;
+      }
 
 }
