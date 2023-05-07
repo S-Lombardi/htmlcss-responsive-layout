@@ -334,39 +334,73 @@ ul{
     color: white;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FINE BENEFITS */
 
 /* ABOUT US */
 .col-60{
     min-width: calc(60% - 20px);
     margin: 10px;
-    height: 400px;
-    background-color:bisque;
+    min-height: 200px;
+    border: 1px dashed black;
 }
-
 .col-40{
     min-width: calc(40% - 20px);
     margin: 10px;
-    height: 400px;
-    background-color:rgb(255, 197, 127);
+    min-height: 200px;
+    border: 1px dashed black;
 }
+.left-us h1{
+    font-size: 40px;
+    color:#9b8ff2;
+}
+.left-us p{
+    line-height: 30px;
+    margin: 30px 0px;
+}
+.photo-right{
+    position: relative;
+    margin-bottom: 20px;
+}
+.right-us i{
+    font-size: 60px;
+    position: absolute;
+    top: 0;
+    left: 145px;
+}
+.right-us img{
+    width: 200px;
+    border-radius: 50%;
+}
+.right-us p{
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #9b8ff2;
+}
+
+.right-us button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9b8ff2;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FINe ABOUT US */
 
 /* GET STARTED */
@@ -466,13 +500,11 @@ ul{
         color:rgb(155, 143, 242);
     }
     
-    
-
-    /* ABOUT US */
+    /* About Us */
     .about-us .row{
         flex-direction: row;
     }
-    /* ABOUT US */
+    
 
 }
 
