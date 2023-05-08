@@ -82,7 +82,7 @@ ul{
 }
 .extended-menu ul li a{
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 20px;
     color: white;
 
 }
@@ -90,7 +90,13 @@ ul{
     display: inline-block;
 }
 /* Pulsante */
-
+.menu-flex li input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    border:none;
+    cursor: pointer;
+}
 /* FINE HEADER */
 
 
