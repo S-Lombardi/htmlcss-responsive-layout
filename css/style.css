@@ -388,31 +388,20 @@ ul{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FINe ABOUT US */
 
+/* FOOTER */
 /* GET STARTED */
 .get-start{
-    background-color: rgb(211, 182, 238);
+    background-color: #9b8ff2;
+    padding-top:60px;
 }
 
 .col-100{
     min-width: calc(100% - 20px);
     margin: 10px;
-    height: 400px;
-    background-color:rgb(204, 127, 255);
+    min-height: 400px;
+    border: 1px dashed black;
 }
 
 .get-start .container{
@@ -420,23 +409,19 @@ ul{
     margin-top: 0px;
 }
 /* FINE GET STARTED */
-/* FINE MAIN */
-
-/* FOOTER */
-.background-footer{
-    background-color: rgb(99, 99, 99);
+.footer-down{
+    background-color:#333333;
+    padding-top: 50px;
 }
 
-.background-footer .container{
+.footer-down .container{
     margin-bottom: 0px;
     margin-top: 0px;
 }
 /* FINE FOOTER */
 
 
-
-
-
+/************** MEDIA QUERY **************/
 /* TABLET */
 @media screen and (min-width:768px) {
     .container{
